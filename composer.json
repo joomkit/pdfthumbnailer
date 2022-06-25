@@ -2,7 +2,6 @@
     "name": "joomkit/pdfthumbnailer",
     "description": "Create thumbnail images from pdf docs",
     "type": "craft-plugin",
-    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
