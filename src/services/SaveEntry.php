@@ -170,7 +170,7 @@ class SaveEntry extends Component
             $docFileName = $asset->filename;
             $docTitle = $asset->title;
             $outputFilename = strtolower($assetfilename);
-            $tmpImagePath = sys_get_temp_dir() . '';
+            $tmpImagePath = sys_get_temp_dir() . '/';
             $im->writeImage($tmpImagePath . $outputFilename . '.jpg');
 
             if($i < 1){
@@ -181,29 +181,10 @@ class SaveEntry extends Component
                 throw new Exception('Error');
             }
 
-            //store image
-//           $tmpImagePath =  getenv('CRAFTENV_BASE_PATH').'storage/runtime/temp/';
-
-
-
-//
-//            $tmpImagePath = sys_get_temp_dir() . '/';
-//            $im->writeImage($tmpImagePath . $outputFilename . '.jpg');
-//
-//            // for multiple thumbs we only save first asset as thumb
-//            //if($i < 1){
-//            $assetId = $this->savePDFThumbImageAsAsset($tmpImagePath,$entry,$outputFilename,$docFileName,$docTitle);
-//            //}
-//
-//            $result = $this->SaveAssetsToEntry($assetId, $entry, $pdfcount);
-//            if ($result === false) {
-//                throw new Exception('Error');
-//            }
-
             Craft::info(
                 Craft::t(
                     'pdfthumbnailer',
-                    'foome '.$assetId
+                    'saved thumb '.$assetId
                 ),
                 __METHOD__
             );
