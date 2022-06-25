@@ -1,6 +1,6 @@
 # pdfthumbnailer plugin for Craft CMS 3.x
 
-Create thumbnail images from pdf docs
+Create thumbnail images from pdf documents that are assets fields in Craft cms
 
 ![Screenshot](resources/img/plugin-logo.png)
 
